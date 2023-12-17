@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"> -->
+    <title>在线简历</title>
+    <link
+      rel="stylesheet"
+href="https://at.alicdn.com/t/c/font_4331885_z84ueuko0se.css"
+    />
+    <style>
+      body {box-sizing: border-box;display: flex;margin: 0;padding: 0;font: 18px/1.5 
+            Arial;color: #454444;background: #efefef;}
+      .layout {max-width: 900px;height: 100%;background: #fff;margin-left: 
+               auto;margin-right: auto;}
+      a { color: #1AD09B;text-decoration: none;border-bottom: 2px solid 
+          #1AD09B;padding-bottom: 1px;}
+      #page {display: flex;flex-wrap: wrap;background: #fff;margin-top: 0;
+            margin-bottom: 10px;}
+      #bor{width: 858px;border-bottom: 3px solid #666;margin-left: 20px;margin-right: 10px;}
+      header {background: #3c3c3c;width: 100%;text-align: center;
+              padding: 5px 0 90px 0;color: #fff; }
+      header > h3 {font-size: 32px;line-height: 32px;text-align: center;
+                    margin-bottom: 2px;letter-spacing: 4px;}
+      header > p {font-size: 18px;color: #c6c0c0;margin: 0;letter-spacing: 2px;}
+      aside {width: 240px;position: relative;padding-top: 10px;margin-bottom: 10px;}
+      aside .avatar img { position: absolute;top: -90px;left: 371px;  width: 155px;
+                          height: 155px;border-radius: 50%;border: 1px solid #ccc;
+                          background: #ccc;}
+      aside .section1 .detail { width: 766px;display: flex;
+                                justify-content: space-around;font-size: 20px;
+                                color: #333;margin: 10px ;}
+      aside .section1 .detail span{font-size: 18px;}
+      aside .section1 .detail1 { width: 580px;display: flex;color: #333;
+                                 justify-content: space-around;margin-left: 15px;}
+      aside .section1 .detail1 a {font-size: 20px;color: #1AD09B;}
+      aside .section1 .detail1 span {font-size: 18px;margin-right: 10px;}
+      aside .section1 h3 {font-size:22px;color:#5c99ca;
+                           margin:10px 10px 30px  20px; }
+      h2 {color: #5c99ca; margin: 10px 0 10px 20px;} 
+      main { min-height: calc(100vh - 162px);}
+      main #item1{display: flex;justify-content: space-between; margin:0px 20px;}
+      main #item1 h3{color: #262626; margin-top: 15px;margin-bottom: 15px;}
+      main ul{margin-right: 10px;}
+      @media (max-width: 768px) {
+        body{
+          background: #fff;
+          box-sizing: border-box;
+          display: flex;
+          margin: 0;
+          padding: 0;
+          font: 20px/1.5 Arial;
+          color: #454444;
+          background: #efefef;
+        }
+        header {
+          padding-top: 20px;
+          padding-bottom: 90px;
+        }
+        aside {
+          width: 100%;
+          padding-top: 0px;
+        }
+        aside .avatar img {
+          width: 100px;
+          height: 100px;
+        }
+        @media only screen and (max-width: 768px) {
+  aside .avatar img {
+    position: absolute;
+    top: -90px;
+    left: 377px; 
+    width: 130px;
+    height: 130px;
+    border: 1px solid #ccc;
+    background: #ccc;
+  }
+}
+      }
+    </style>
+    <style media="print">
+    .flfd1{
+   page-break-before: always;
+      }
+      
+      .flfd4{
+ margin-top: 10px;
+      }
+      .flfd5{
+        page-break-before: always;
+ margin-top: 10px;
+      }
+      aside .avatar img {
+        position: absolute;
+        top: -90px;
+        left: 362px; 
+      }
+      #bor{margin-right: 20px;}
+    </style>
+  </head>
+  <body>
+    <div class="layout" id="page">
+      <header>
+        <h3>邓采军</h3>
+        <p>应聘前端工程师</p>
+      </header>
+      <div>
+        <aside>
+          <div class="avatar">
+            <img src="./dcj.jpg" alt="军" />
+          </div>
+          <div class="section1">
+            <h2>基础信息</h2>
+            <div class="detail">
+              <span>性别：男</span>
+              <span>年龄：26</span>
+              <span  id="icon" class="iconfont icon-education1">&nbsp;本科</span>
+              <span id="icon" class="iconfont icon-wechat">
+                <span  id="icon" class="iconfont icon-phone">：13278671843</span>
+              </span>
+              <span  id="icon" class="iconfont icon-emil">：13278671843@163.com</span>
+            </div>
+            <div class="detail1">
+              <span  id="icon" class="iconfont icon-github"><a href="https://github.com/Dengcaijun?tab=repositories" target="_blank">GitHub</a>(最近三个月有28次提交)</span>
+              <span  id="icon" class="iconfont icon-blog" ><a href="https://juejin.cn/user/292905460964928/posts" target="_blank">掘金</a
+                >(最近提交了9篇技术博客)</span
+              >
+            </div>
+          </div>
+        </aside>
+        <p id="bor"></p>
+      </div>
+      
+       <main>
+        <section>
+         <div>
+          <h2>技术栈</h2>
+          <ul class="ul" id="list"></ul>
+          <p id="bor"></p>
+         </div>
+        </section>
+        <section>
+         <div>
+          <h2>工作经历</h2>
+          <div >
+            <div id="item1" >
+              <span>2022.4-2023.6</span>
+              <span>Web前端开发工程师</span>
+              <span>山东建投数据科技有限公司 
+              </span>
+            </div>
+            <div id="item1">
+              <span>2023.8-2023.11</span>
+              <span>Web前端开发工程师</span>
+              <span>浙江科慧智能科技有限公司 
+              </span>
+            </div>
+           </div>
+          <p id="bor"></p>
+         </div>
+        </section>
+        <section>
+         <div>
+          <h2>项目经历</h2>
+          <div class="item" >
+            <div id="item1">
+              <h3>天天记帐（PC端+移动端）</h3>
+              <h3>预览项目: <a href="https://dengcaijun.github.io/Dengcaijun.github.io3/" target="_blank">点击查看</a></h3>
+             </div>
+             <ul id="list1">
+             </ul>
+          <div class="flfd4">
+            <div class="flfd2" id="item1">
+              <h3 class="flfd1">风力发电机3D可视化大屏</h3>
+              <h3>预览项目: <a href="https://dengcaijun.github.io/FLFD-3D/" target="_blank">点击查看</a></h3>
+             </div>
+             <ul id="list2">
+             </ul>
+             <div id="item1">
+              <h3>大屏可视化项目</h3>
+              <h3>预览项目: <a href="https://dengcaijun.github.io/Beyond.github.io/#/" target="_blank">点击查看</a></h3>
+             </div>
+             <ul id="list3">
+             </ul>
+             <div id="item1">
+              <h3>供应链 ERP</h3>
+              <h3>预览项目: <a href="https://juejin.cn/user/292905460964928/posts" target="_blank">不支持开源</a></div></div>
+            <ul id="list4" >
+            </ul>
+            <!-- <div id="item1">
+              <h3>宠小到大智能管理系统</h3>
+              <h3>预览项目: <a href="https://juejin.cn/user/292905460964928/posts" target="_blank">不支持开源</a></h3>
+             </div>
+             <ul id="list5">
+            </ul> -->
+           
+            <p id="bor"></p>
+           </div>
+           <div>
+              <h2>开源项目</h2>
+              <div class="item" >
+                <div id="item1">
+                    <h3 >打字游戏</h3>
+                    <h3>预览项目: <a href="https://dengcaijun.github.io/typing-game1.2/" target="_blank">点击查看</a></h3>
+                </div>
+                 <ul id="list9">
+                 </ul>
+              </div>
+              <div class="flfd5">
+                <div class="flfd5" id="item1" >
+                  <h3>飞机大战</h3>
+                  <h3>预览项目: <a href="https://dengcaijun.github.io/Dengcaijun.github.io12-1/" target="_blank">点击查看键盘版</a>&nbsp;&nbsp;&nbsp;<a href="https://dengcaijun.github.io/Dengcaijun.github.io12-2/">点击查看鼠标版</a></h3> 
+                </div>
+                <ul id="list6">
+                </ul>
+               <div id="item1">
+                <h3>在线日历</h3>
+                <h3>预览项目: <a href="https://dengcaijun.github.io/Dengcaijun.github.io1/" target="_blank">点击查看</a></h3>
+               </div>
+               <ul id="list7">
+              </ul>
+              <p id="bor"></p>
+              <div>
+                <h2>个人评价</h2>
+                <div class="item" >
+                 <ul id="list8">
+                 </ul>
+                <p id="bor"></p>
+                </div>
+                <h2>
+                  教育背景
+                </h2>
+                  <div id="item1">
+                    <p >浙江海洋大学（非全日制）</h>
+                    <p>计算机科学与技术</p>
+                    <p>2022年1月-2024年6月</p>
+                  </div>
+              </div>
+              </div>  
+           </div>
+        </section>
+       </main>
+   </div>
+  </body>
+</html>
+<script>
+  const arr = [
+    "熟练掌握Html5、Css3、JavaScript、ES6新特性",
+    "熟练使用React框架完成开发",
+    "熟练掌握React-router、Dva、Redux、RTK、Hooks等相关知识",
+    "熟练使用Antd组件库，并能根据工作需求做出布局",
+    "熟练使用Vue框架完成开发",
+    "熟练掌握Vuex、Vue-Router、Pinia、Element-ui、Element-plus、Vant等相关知识",
+    "熟练使用mock生成数据",
+    "熟练使用Git版本管理工具",
+    "能够使用Git对项目进行管理",
+  ];
+  const arr1=["一款基于Vue3并使用Vite构建的移动端记账应用",
+  "项目使用类似React的TSX语法代替Template模板，同时结合CSS-Modules代替Style",
+  "使用Pinia实现状态管理，避免跨请求状态污染，记录当前用户登录状态、选择偏好和明细列表等数据",
+  "使用Axios处理网络请求，并进行二次封装，包含错误处理、显示加载中、提示登录等能",
+    "使用Vue-Router通过路由守卫来实现鉴权，进而引导用户登录",
+    "自制一个简易的前端Mock方案(其中使用faker构造数据)",
+    "在封装组件的过程中大量使用插槽和V-Model",
+    "本项目为求稳定及出于学习技术的初衷，尽量避免依赖第三方组件库，只使用Vant的日期选择器和对话框",
+    "技术栈：Vue、Vue-Router、Pinia、TSX、Vite、Echarts、Vant"
+]
+const arr2=["一个基于Vue3开发的风力发电监测可视化项目",
+    "项目采用Pinia做全局状态管理、ThreeJs提供风力发电机3D图形显示，为风力发电的运营管理提供高效、实时的数据监控和分析服务",
+    "系统分为零件监测，环境监测，发电监测，异常监测, 实时数据监测，偏航角度监测模块",
+   "可以通过触屏或者其他交互方式，对风力发电机进行旋转、放大、缩小等操作，以便更好地观察和分析风力发电机的运行情况",
+    "技术栈:Vue3、Vue-router、Pinia、ThreeJs、TypeScript"
+]
+const arr3=["大屏可视化能够实时获取和展示数据，帮助用户快速、直观地理解和分析数据",
+    "页面采用了Grid和Flex布局",
+    "为了适应所有屏幕,我使用了动态 rem 方案，具体思路见我的博客",
+    "项目中包含的图例有柱形图、折线图、饼图、地图和表格等",
+    "并且所有图例都可以实时更新数据并辅以动画交互",
+    "通过这个项目，我掌握了大屏可视化项目的制作技巧",
+    "技术栈：React、React-Router、Echarts、Scss、TypeScript"]
+  const arr4=["项目介绍：该系统致力于帮助企业实现数字化转型,通过集成采购、销售、库存、生   产、财务等业务流程，实现企业资源的高效计划与优化配置",
+  "负责模块：登录页面，系统管理，仓库管理，采购管理",
+    "项目采用React(16.8)前端框架进行项目的构建",
+    "封装Axios，对于不同接口应对不同的请求，便于团队方便请求数据、完成数据的增删改查等功能",
+    "通过组件化的开发，在每个组件中以Less编写样式，每个组件都有自己的样式文件，便于后续调整",
+    "使用AntDesign实现页面的布局，高效复用React组件，减少代码量",
+    "函数式组件开发，使用React-Hooks完成数据信息的传递和更新、与页面性能的优化",
+    "所用技术：React、React-Router、Axios、Less、AntDesign、RTK、Hooks",
+   "项目难点：权限管理，对不同的权限人员实现添加，编辑，删除等功能的管理"
+]
+const arr5=["项目介绍：该软件实用性强、功能强大、贴近宠物店日常经营实际，操作简单、便捷易用,是宠物店、宠物生活中不可缺少的得力助手,方便了宠物店的日常管理工作",
+  "项目是使用React(16.8)搭建项目,使用RTK做全局的状态管理，结合React-router(v5)做页面路由切换",
+  "首页面主要使用AntdDesign进行数据可视化处理",
+  "权限管理结合全局状态Reduxjs/Toolkit里的数据对于不同的权限人员实现侧边栏添加，编辑，删除功能的禁用，并且管理者可以对这些人员权限进行编辑，实现组件的按需加载",
+  "使用Hooks对项目做出性能优化",
+  "所用技术：React、React-Router、Hooks、Echarts、AntDesign、Axios、RTK",
+]
+const arr6=["一款基于JavaScrip开发的经典射击游戏",
+"该游戏提供了鼠标版和键盘版两种不同的简单操作方式",
+"通过JavaScript监听用户鼠标及键盘输入事件，实现玩家飞机的移动和射击功能",
+"无论哪种方式,都能让玩家体验到飞行和战斗的刺激感受,在游戏中找到属于自己的乐趣",
+"通过该项目使我更进一步提高了JavaScript的编程技能"
+]
+const arr7=["一款基于JavaScript技术实现的简易日历",
+"该项目主要实现了包括上个月、下个月以及回到当前日期等功能",
+"通过该项目我深入研究JavaScript的内部机制，比如执行上下文、闭包和作用域等等概念，并有效地应用到该项目中"]
+const arr8=["热爱IT行业，有志成为本行业的骨干力量",
+"积极向上，勤于学习，持续关注新技术并不断学习新知识",
+"擅于沟通，有较强抗压能力和团队协作能力，能快速融入集体",
+"平时会去买课学习，看掘金的大佬分享开源项目，做一些技术的普及"]
+const arr9=["基于JavaScript技术开发的一款有趣的打字游戏",
+"玩家需要快速准确地输入由游戏给出的字母",
+"这款游戏可以帮助玩家提高打字的速度、准确性和反应能力",
+"无论是对成年人还是孩子来说，都是一种有益的娱乐方式，不仅可以锻炼打字技能，还可以增强专注力和注意力。让人们在娱乐中学习，享受快速输入的乐趣"]
+function formatListWithColor(listId, arr, color) {
+  const list = document.querySelector(listId);
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    const item = arr[i];
+    const lettersAndNumbers = item.match(/[a-zA-Z0-9]+/g); // 使用正则表达式匹配英文字母和数字
+    let formattedItem = item;
+    if (lettersAndNumbers) {
+      for (let j = 0; j < lettersAndNumbers.length; j++) {
+        const letterOrNumber = lettersAndNumbers[j];
+        formattedItem = formattedItem.replace(
+          new RegExp(letterOrNumber, 'g'),
+          `<span style="color: ${color};">${letterOrNumber}</span>` // 将英文字母和数字用<span>标签包裹，并设置指定颜色字体
+        );
+      }
+    }
+    str += (listId === "#list3" && i === 2) ?
+  `<li>${formattedItem}<a style="color:#1AD09B;" href="https://juejin.cn/post/7308434215811924018" target="_blank">博客</a></li>` :
+  `<li>${formattedItem}</li>`;
+  }
+  list.innerHTML = str;
+}
+function setFormattedList(listId, arr) {
+  const list = document.querySelector(listId);
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    const item = arr[i];
+    str += `<li>${item}</li>`;
+  }
+  list.innerHTML = str;
+}
+formatListWithColor("#list", arr, '#1AD09B');
+formatListWithColor("#list1", arr1, '#1AD09B');
+formatListWithColor("#list2", arr2, '#1AD09B');
+formatListWithColor("#list3", arr3, '#1AD09B');
+formatListWithColor("#list4", arr4, '#1AD09B');
+//formatListWithColor("#list5", arr5, '#1AD09B');
+formatListWithColor("#list6", arr6, '#1AD09B');
+formatListWithColor("#list7", arr7, '#1AD09B');
+formatListWithColor("#list9", arr9, '#1AD09B');
+setFormattedList("#list8", arr8);
+</script>
